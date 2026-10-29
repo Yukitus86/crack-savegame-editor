@@ -1,0 +1,1707 @@
+{
+ "scanner": {
+  "depth": {
+   "tierValues": [
+    0.30000001192092896,
+    0.6000000238418579,
+    0.800000011920929,
+    0.8999999761581421,
+    1.0
+   ],
+   "stepPrices": [
+    5000,
+    10000,
+    15000,
+    25000
+   ]
+  },
+  "spread": {
+   "tierValues": [
+    0.25,
+    0.4000000059604645,
+    0.6000000238418579,
+    0.800000011920929,
+    1.0
+   ],
+   "stepPrices": [
+    5000,
+    10000,
+    20000,
+    40000
+   ]
+  },
+  "duration": {
+   "tierValues": [
+    30.0,
+    45.0,
+    60.0,
+    90.0,
+    120.0
+   ],
+   "stepPrices": [
+    5000,
+    10000,
+    15000,
+    20000
+   ]
+  },
+  "cooldown": {
+   "tierValues": [
+    60.0,
+    40.0,
+    25.0,
+    15.0,
+    5.0
+   ],
+   "stepPrices": [
+    2500,
+    5000,
+    10000,
+    20000
+   ]
+  },
+  "sensitivity": {
+   "tiers": [
+    {
+     "unlocks": [
+      2,
+      8
+     ]
+    },
+    {
+     "unlocks": [
+      5,
+      10
+     ]
+    },
+    {
+     "unlocks": [
+      7,
+      9
+     ]
+    },
+    {
+     "unlocks": [
+      15
+     ]
+    }
+   ],
+   "stepPrices": [
+    5000,
+    10000,
+    15000
+   ]
+  }
+ },
+ "botMaxLevel": 5,
+ "cartTierPrices": [
+  2500,
+  5000,
+  7500,
+  10000
+ ],
+ "garage": {
+  "vehicle_1": 1000000,
+  "bot_drone_2": 1000000,
+  "bot_collector_2": 1000000,
+  "vehicle_2": 1000000,
+  "bot_collector_1": 1000000,
+  "bot_drone_1": 1000000,
+  "bot_drone_3": 1000000,
+  "bot_collector_3": 1000000,
+  "bot_collector_4": 1000000,
+  "bot_drone_4": 1000000
+ },
+ "startingBalance": 2000,
+ "maxAgitation": 100.0,
+ "catalogs": [
+  {
+   "id": "Catalog 1",
+   "nameKey": "Shop_Catalog_Tier1",
+   "fromStart": true,
+   "items": [
+    "Pickaxe_Tier1",
+    "Chisel_Tier1",
+    "Bucket_Tier1",
+    "Boombox",
+    "Eraser"
+   ]
+  },
+  {
+   "id": "Catalog 2",
+   "nameKey": "Shop_Catalog_Tier2",
+   "fromStart": false,
+   "items": [
+    "Shovel_Tier1",
+    "Pickaxe_Tier2",
+    "Chisel_Tier2",
+    "Bucket_Tier2",
+    "Flashlight",
+    "Lantern"
+   ]
+  },
+  {
+   "id": "Catalog 3",
+   "nameKey": "Shop_Catalog_Tier3",
+   "fromStart": false,
+   "items": [
+    "Maddock_Tier1",
+    "Scanner",
+    "Shovel_Tier2",
+    "Bucket_Tier3",
+    "Megaphone",
+    "Wrench_Tier1"
+   ]
+  },
+  {
+   "id": "Catalog 4",
+   "nameKey": "Shop_Catalog_Tier4",
+   "fromStart": false,
+   "items": [
+    "Toolbox_Tier1",
+    "Hammer_Tier1",
+    "Spike_Tier1",
+    "Maddock_Tier2",
+    "Shovel_Tier3"
+   ]
+  },
+  {
+   "id": "Catalog 5",
+   "nameKey": "Shop_Catalog_Tier5",
+   "fromStart": false,
+   "items": [
+    "Blowtorch",
+    "Dynamite_Tier1",
+    "Dynamite_Tier2",
+    "Toolbox_Tier2",
+    "Hammer_Tier2",
+    "Bucket_Tier4",
+    "Basketball",
+    "Wrench_Tier2"
+   ]
+  },
+  {
+   "id": "Catalog 6",
+   "nameKey": "Shop_Catalog_Tier6",
+   "fromStart": false,
+   "items": [
+    "Chainsaw",
+    "Jackhammer",
+    "Hammer_Tier3",
+    "Dynamite_Tier3",
+    "Spike_Tier2"
+   ]
+  }
+ ],
+ "shop": [
+  {
+   "id": "Marker_Black",
+   "nameKey": "Item_Marker_Black_Name",
+   "price": 999,
+   "shippingCents": 0,
+   "maxPurchases": 2,
+   "resetDaily": true,
+   "assetId": 1950331820
+  },
+  {
+   "id": "Marker_Blue",
+   "nameKey": "Item_Marker_Blue_Name",
+   "price": 999,
+   "shippingCents": 0,
+   "maxPurchases": 2,
+   "resetDaily": true,
+   "assetId": 3018664121
+  },
+  {
+   "id": "Marker_Green",
+   "nameKey": "Item_Marker_Green_Name",
+   "price": 999,
+   "shippingCents": 0,
+   "maxPurchases": 2,
+   "resetDaily": true,
+   "assetId": 1948443913
+  },
+  {
+   "id": "Marker_Red",
+   "nameKey": "Item_Marker_Red_Name",
+   "price": 999,
+   "shippingCents": 0,
+   "maxPurchases": 2,
+   "resetDaily": true,
+   "assetId": 686318760
+  },
+  {
+   "id": "Basketball",
+   "nameKey": "Item_Basketball_Name",
+   "price": 9999,
+   "shippingCents": 0,
+   "maxPurchases": 3,
+   "resetDaily": true,
+   "assetId": 1728955620
+  },
+  {
+   "id": "Blowtorch",
+   "nameKey": "Item_Blowtorch_Name",
+   "price": 2999,
+   "shippingCents": 0,
+   "maxPurchases": 2,
+   "resetDaily": true,
+   "assetId": 1975127212
+  },
+  {
+   "id": "Boombox",
+   "nameKey": "Item_Radio_Name",
+   "price": 4995,
+   "shippingCents": 0,
+   "maxPurchases": 1,
+   "resetDaily": true,
+   "assetId": 2286996620
+  },
+  {
+   "id": "Bucket_Tier1",
+   "nameKey": "Item_Bucket_Tier1_Name",
+   "price": 1999,
+   "shippingCents": 0,
+   "maxPurchases": 5,
+   "resetDaily": true,
+   "assetId": 338043954
+  },
+  {
+   "id": "Bucket_Tier2",
+   "nameKey": "Item_Bucket_Tier2_Name",
+   "price": 3995,
+   "shippingCents": 0,
+   "maxPurchases": 5,
+   "resetDaily": true,
+   "assetId": 3715882681
+  },
+  {
+   "id": "Bucket_Tier3",
+   "nameKey": "Item_Bucket_Tier3_Name",
+   "price": 6595,
+   "shippingCents": 0,
+   "maxPurchases": 5,
+   "resetDaily": true,
+   "assetId": 1622121373
+  },
+  {
+   "id": "Bucket_Tier4",
+   "nameKey": "Item_Bucket_Tier4_Name",
+   "price": 9595,
+   "shippingCents": 0,
+   "maxPurchases": 5,
+   "resetDaily": true,
+   "assetId": 1375890308
+  },
+  {
+   "id": "Chainsaw",
+   "nameKey": "Item_Chainsaw_Tier1_Name",
+   "price": 12999,
+   "shippingCents": 0,
+   "maxPurchases": 1,
+   "resetDaily": true,
+   "assetId": 3432922346
+  },
+  {
+   "id": "Chisel_Tier1",
+   "nameKey": "Item_Chisel_Tier1_Name",
+   "price": 999,
+   "shippingCents": 0,
+   "maxPurchases": 2,
+   "resetDaily": true,
+   "assetId": 2413928369
+  },
+  {
+   "id": "Chisel_Tier2",
+   "nameKey": "Item_Chisel_Tier2_Name",
+   "price": 2599,
+   "shippingCents": 0,
+   "maxPurchases": 2,
+   "resetDaily": true,
+   "assetId": 1273088988
+  },
+  {
+   "id": "Dynamite_Tier1",
+   "nameKey": "Item_Dynamite_Tier1_Name",
+   "price": 1999,
+   "shippingCents": 0,
+   "maxPurchases": 5,
+   "resetDaily": true,
+   "assetId": 1717350434
+  },
+  {
+   "id": "Dynamite_Tier2",
+   "nameKey": "Item_Dynamite_Tier2_Name",
+   "price": 3499,
+   "shippingCents": 0,
+   "maxPurchases": 2,
+   "resetDaily": true,
+   "assetId": 1115181008
+  },
+  {
+   "id": "Dynamite_Tier3",
+   "nameKey": "Item_Dynamite_Tier3_Name",
+   "price": 6999,
+   "shippingCents": 0,
+   "maxPurchases": 1,
+   "resetDaily": true,
+   "assetId": 1067713955
+  },
+  {
+   "id": "Eraser",
+   "nameKey": "Item_Eraser_Name",
+   "price": 1995,
+   "shippingCents": 0,
+   "maxPurchases": 2,
+   "resetDaily": false,
+   "assetId": 761496099
+  },
+  {
+   "id": "Flashlight",
+   "nameKey": "Item_Flashlight_Name",
+   "price": 6995,
+   "shippingCents": 0,
+   "maxPurchases": 2,
+   "resetDaily": true,
+   "assetId": 3553082563
+  },
+  {
+   "id": "Hammer_Tier1",
+   "nameKey": "Item_Hammer_Tier1_Name",
+   "price": 1599,
+   "shippingCents": 0,
+   "maxPurchases": 3,
+   "resetDaily": true,
+   "assetId": 241473445
+  },
+  {
+   "id": "Hammer_Tier2",
+   "nameKey": "Item_Hammer_Tier2_Name",
+   "price": 2499,
+   "shippingCents": 0,
+   "maxPurchases": 3,
+   "resetDaily": true,
+   "assetId": 2453158029
+  },
+  {
+   "id": "Hammer_Tier3",
+   "nameKey": "Item_Hammer_Tier3_Name",
+   "price": 6999,
+   "shippingCents": 0,
+   "maxPurchases": 3,
+   "resetDaily": true,
+   "assetId": 1336187827
+  },
+  {
+   "id": "Jackhammer",
+   "nameKey": "Item_Jackhammer_Tier1_Name",
+   "price": 14999,
+   "shippingCents": 0,
+   "maxPurchases": 1,
+   "resetDaily": true,
+   "assetId": 3018402155
+  },
+  {
+   "id": "Lantern",
+   "nameKey": "Item_Lantern_Name",
+   "price": 6995,
+   "shippingCents": 0,
+   "maxPurchases": 2,
+   "resetDaily": true,
+   "assetId": 4069428317
+  },
+  {
+   "id": "Maddock_Tier1",
+   "nameKey": "Item_Maddock_Tier1_Name",
+   "price": 3999,
+   "shippingCents": 0,
+   "maxPurchases": 2,
+   "resetDaily": true,
+   "assetId": 2837072909
+  },
+  {
+   "id": "Maddock_Tier2",
+   "nameKey": "Item_Maddock_Tier2_Name",
+   "price": 5999,
+   "shippingCents": 0,
+   "maxPurchases": 1,
+   "resetDaily": true,
+   "assetId": 989544982
+  },
+  {
+   "id": "Megaphone",
+   "nameKey": "Item_Megaphone_Name",
+   "price": 4995,
+   "shippingCents": 0,
+   "maxPurchases": 1,
+   "resetDaily": true,
+   "assetId": 1262039744
+  },
+  {
+   "id": "Pickaxe_Tier1",
+   "nameKey": "Item_Pickaxe_Tier1_Name",
+   "price": 999,
+   "shippingCents": 0,
+   "maxPurchases": 2,
+   "resetDaily": true,
+   "assetId": 2966864608
+  },
+  {
+   "id": "Pickaxe_Tier2",
+   "nameKey": "Item_Pickaxe_Tier2_Name",
+   "price": 4999,
+   "shippingCents": 0,
+   "maxPurchases": 2,
+   "resetDaily": true,
+   "assetId": 1479070318
+  },
+  {
+   "id": "Scanner",
+   "nameKey": "Item_Scanner_Name",
+   "price": 12999,
+   "shippingCents": 0,
+   "maxPurchases": 1,
+   "resetDaily": false,
+   "assetId": 513427413
+  },
+  {
+   "id": "Shovel_Tier1",
+   "nameKey": "Item_Shovel_Tier1_Name",
+   "price": 1399,
+   "shippingCents": 0,
+   "maxPurchases": 4,
+   "resetDaily": true,
+   "assetId": 3123441729
+  },
+  {
+   "id": "Shovel_Tier2",
+   "nameKey": "Item_Shovel_Tier2_Name",
+   "price": 3999,
+   "shippingCents": 0,
+   "maxPurchases": 3,
+   "resetDaily": true,
+   "assetId": 3966628652
+  },
+  {
+   "id": "Shovel_Tier3",
+   "nameKey": "Item_Shovel_Tier3_Name",
+   "price": 7599,
+   "shippingCents": 0,
+   "maxPurchases": 2,
+   "resetDaily": true,
+   "assetId": 2543090715
+  },
+  {
+   "id": "Spike_Tier1",
+   "nameKey": "Item_Spike_Tier1_Name",
+   "price": 4999,
+   "shippingCents": 0,
+   "maxPurchases": 1,
+   "resetDaily": true,
+   "assetId": 4140419951
+  },
+  {
+   "id": "Spike_Tier2",
+   "nameKey": "Item_Spike_Tier2_Name",
+   "price": 8999,
+   "shippingCents": 0,
+   "maxPurchases": 1,
+   "resetDaily": true,
+   "assetId": 858577846
+  },
+  {
+   "id": "Toolbox_Tier1",
+   "nameKey": "Item_Toolbox_Tier1_Name",
+   "price": 5999,
+   "shippingCents": 0,
+   "maxPurchases": 1,
+   "resetDaily": true,
+   "assetId": 2038056794
+  },
+  {
+   "id": "Toolbox_Tier2",
+   "nameKey": "Item_Toolbox_Tier2_Name",
+   "price": 9999,
+   "shippingCents": 0,
+   "maxPurchases": 1,
+   "resetDaily": true,
+   "assetId": 603139723
+  },
+  {
+   "id": "Wrench_Tier1",
+   "nameKey": "Item_Wrench_Tier1_Name",
+   "price": 2495,
+   "shippingCents": 0,
+   "maxPurchases": 1,
+   "resetDaily": true,
+   "assetId": 1421870705
+  },
+  {
+   "id": "Wrench_Tier2",
+   "nameKey": "Item_Wrench_Tier2_Name",
+   "price": 3995,
+   "shippingCents": 0,
+   "maxPurchases": 1,
+   "resetDaily": true,
+   "assetId": 2814151181
+  }
+ ],
+ "prefabs": {
+  "2855932273": {
+   "prefab": "SM_ArcadeCabinet_Button_Base (2)",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "1486044553": {
+   "prefab": "PF_BadgeReader_Wall",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "1636585843": {
+   "prefab": "PF_BadgeReader_Wall",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "4061481704": {
+   "prefab": "Whiteboard",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "3257293368": {
+   "prefab": "PF_DepositMachine",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "3512174946": {
+   "prefab": "SM_ArcadeCabinet_Button_Base (2)",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "3979169894": {
+   "prefab": "FBX_QuartersDoor",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "3687869070": {
+   "prefab": "Terminal",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "2760434114": {
+   "prefab": "Cabinet",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "1692307921": {
+   "prefab": "Cabinet",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "2812515873": {
+   "prefab": "PF_ComputerStation",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "886566512": {
+   "prefab": "FBX_ToolRefillMachine",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "2628927137": {
+   "prefab": "SM_BurstPipe_Stable",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "3972067148": {
+   "prefab": "PF_ComputerStation",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "1639258035": {
+   "prefab": "Left",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "1381377728": {
+   "prefab": "SM_LabWall_GarageOpening (1)",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "1460349716": {
+   "prefab": "PF_SecurityCamera_10",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "3977022583": {
+   "prefab": "PF_ComputerStation (1)",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "640767021": {
+   "prefab": "PF_Drone (1)",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "2024130946": {
+   "prefab": "PF_Robot",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "1066667596": {
+   "prefab": "PF_App_Balance",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "83587611": {
+   "prefab": "PF_App_Productivity",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "686318760": {
+   "prefab": "PF_Item_Marker_Red",
+   "nameKey": "Item_Marker_Red_Name",
+   "maxDurability": 0,
+   "scrapValue": 500
+  },
+  "3018664121": {
+   "prefab": "PF_Item_Marker_Blue",
+   "nameKey": "Item_Marker_Blue_Name",
+   "maxDurability": 0,
+   "scrapValue": 500
+  },
+  "1466220617": {
+   "prefab": "PF_BadgeReader_Wall (2)",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "2651502528": {
+   "prefab": "PF_ComputerStation (1)_2",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "2878016586": {
+   "prefab": "SM_Item_ChickenPiece",
+   "nameKey": "Item_ChickenPiece_Name",
+   "maxDurability": 0,
+   "scrapValue": 500
+  },
+  "4093309910": {
+   "prefab": "PF_BadgeReader_Arcade",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "913175554": {
+   "prefab": "PF_GolfCart_Tier1_1",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "338043954": {
+   "prefab": "PF_Item_Bucket_Tier1",
+   "nameKey": "Item_Bucket_Tier1_Name",
+   "maxDurability": 0,
+   "scrapValue": 500
+  },
+  "1950331820": {
+   "prefab": "PF_Item_Marker_Black",
+   "nameKey": "Item_Marker_Black_Name",
+   "maxDurability": 0,
+   "scrapValue": 500
+  },
+  "3974522792": {
+   "prefab": "PF_Item_Clipboard_Guide",
+   "nameKey": "Item_Handbook_Name",
+   "maxDurability": 0,
+   "scrapValue": 500
+  },
+  "769789781": {
+   "prefab": "PF_Item_SoundAnalyzer_1",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "3446513645": {
+   "prefab": "PF_Item_UVLight",
+   "nameKey": "Item_Flashlight_Name",
+   "maxDurability": 0,
+   "scrapValue": 500
+  },
+  "1068162407": {
+   "prefab": "PF_Item_Clipboard",
+   "nameKey": "Item_TutorialClipboard_Name",
+   "maxDurability": 0,
+   "scrapValue": 500
+  },
+  "761496099": {
+   "prefab": "PF_Item_Eraser",
+   "nameKey": "Item_Eraser_Name",
+   "maxDurability": 0,
+   "scrapValue": 500
+  },
+  "1948443913": {
+   "prefab": "PF_Item_Marker_Green",
+   "nameKey": "Item_Marker_Green_Name",
+   "maxDurability": 0,
+   "scrapValue": 500
+  },
+  "4056723942": {
+   "prefab": "PF_BadgeReader_Desk",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "2543090715": {
+   "prefab": "PF_Item_Shovel_Tier3",
+   "nameKey": "Item_Shovel_Tier3_Name",
+   "maxDurability": 250,
+   "scrapValue": 500
+  },
+  "2413928369": {
+   "prefab": "PF_Item_Chisel_Tier1",
+   "nameKey": "Item_Chisel_Tier1_Name",
+   "maxDurability": 150,
+   "scrapValue": 500
+  },
+  "2966864608": {
+   "prefab": "PF_Item_Pickaxe_Tier1",
+   "nameKey": "Item_Pickaxe_Tier1_Name",
+   "maxDurability": 150,
+   "scrapValue": 500
+  },
+  "1421870705": {
+   "prefab": "PF_Item_Wrench_Tier1",
+   "nameKey": "Item_Wrench_Tier1_Name",
+   "maxDurability": 100,
+   "scrapValue": 500
+  },
+  "1479070318": {
+   "prefab": "PF_Item_Pickaxe_Tier2",
+   "nameKey": "Item_Pickaxe_Tier2_Name",
+   "maxDurability": 250,
+   "scrapValue": 500
+  },
+  "1728955620": {
+   "prefab": "PF_Item_Basketball",
+   "nameKey": "Item_Basketball_Name",
+   "maxDurability": 0,
+   "scrapValue": 500
+  },
+  "1007947832": {
+   "prefab": "PF_App_SlidingBlocks",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "1839040950": {
+   "prefab": "PF_Grub",
+   "nameKey": "Item_Grub_Name",
+   "maxDurability": 0,
+   "scrapValue": 500
+  },
+  "4271722199": {
+   "prefab": "PF_App_Console",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "1539962970": {
+   "prefab": "PF_App_Shop",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "4112611077": {
+   "prefab": "PF_App_PuzzleLauncher",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "1713635732": {
+   "prefab": "PF_App_ScannerShop",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "509560455": {
+   "prefab": "PF_App_Bricks",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "51666488": {
+   "prefab": "PF_App_Records",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "3492861362": {
+   "prefab": "PF_App_WordScramble",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "2605103944": {
+   "prefab": "PF_App_ToolboxShop",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "969393759": {
+   "prefab": "PF_App_Danger",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "169245635": {
+   "prefab": "PF_App_Mail",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "1910927585": {
+   "prefab": "PF_App_Scanner",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "3067830577": {
+   "prefab": "PF_App_CoatShop",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "326944366": {
+   "prefab": "PF_App_SkillCircle",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "945722011": {
+   "prefab": "PF_App_NumberCode",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "3501225881": {
+   "prefab": "PF_App_Memory",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "2158376187": {
+   "prefab": "PF_App_PressureBalancing",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "969544852": {
+   "prefab": "PF_App_FrequencyMatching",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "2620302803": {
+   "prefab": "PF_Geode_02",
+   "nameKey": "",
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "2804500729": {
+   "prefab": "PF_Geode_01",
+   "nameKey": "",
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "3810010362": {
+   "prefab": "PF_Geode_03",
+   "nameKey": "",
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "761657767": {
+   "prefab": "PF_App_LightsOut",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "3249977161": {
+   "prefab": "PF_CreatureEye",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "523727652": {
+   "prefab": "PF_PlayerController",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "144139621": {
+   "prefab": "PF_Chicken",
+   "nameKey": "Item_Chicken_Name",
+   "maxDurability": 0,
+   "scrapValue": -1
+  },
+  "2021873489": {
+   "prefab": "PF_App_SimonSays",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "929609880": {
+   "prefab": "PF_App_SkillBar",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "1375890308": {
+   "prefab": "PF_Item_Bucket_Tier4",
+   "nameKey": "Item_Bucket_Tier4_Name",
+   "maxDurability": 0,
+   "scrapValue": 500
+  },
+  "137733443": {
+   "prefab": "PF_PickupSettler",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "1576085756": {
+   "prefab": "PF_GoldFragment",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "333043557": {
+   "prefab": "PF_CrystalDeposit_Cube",
+   "nameKey": "Item_Crystal_Cube_Name",
+   "maxDurability": 0,
+   "scrapValue": 2000
+  },
+  "3010816183": {
+   "prefab": "PF_CalciumDeposit",
+   "nameKey": "Item_CalciumDeposit_Name",
+   "maxDurability": 0,
+   "scrapValue": 2000
+  },
+  "3703678943": {
+   "prefab": "PF_PeeledChunk",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "4061865467": {
+   "prefab": "PF_CrystalDeposit_Pink",
+   "nameKey": "Item_Crystal_Pink_Name",
+   "maxDurability": 0,
+   "scrapValue": 2000
+  },
+  "916845904": {
+   "prefab": "PF_CrystalDeposit_Purple",
+   "nameKey": "Item_Crystal_Purple_Name",
+   "maxDurability": 0,
+   "scrapValue": 2000
+  },
+  "970513156": {
+   "prefab": "PF_ToolDeposit",
+   "nameKey": "Item_CalciumDeposit_Name",
+   "maxDurability": 0,
+   "scrapValue": 2000
+  },
+  "3291092376": {
+   "prefab": "PF_BoneFragment",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "1801313814": {
+   "prefab": "PF_Item_Egg",
+   "nameKey": "Item_Egg_Name",
+   "maxDurability": 0,
+   "scrapValue": 2000
+  },
+  "2459108431": {
+   "prefab": "PF_CrystalDeposit_Green",
+   "nameKey": "Item_Crystal_Green_Name",
+   "maxDurability": 0,
+   "scrapValue": 2000
+  },
+  "4246481344": {
+   "prefab": "PF_EggFleshChunk",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "1235427058": {
+   "prefab": "PF_CrystalDeposit_Blue",
+   "nameKey": "Item_Crystal_Blue_Name",
+   "maxDurability": 0,
+   "scrapValue": 2000
+  },
+  "4057746127": {
+   "prefab": "PF_Beetle",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "1321647322": {
+   "prefab": "PF_App_PipePuzzle",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "1622121373": {
+   "prefab": "PF_Item_Bucket_Tier3",
+   "nameKey": "Item_Bucket_Tier3_Name",
+   "maxDurability": 0,
+   "scrapValue": 500
+  },
+  "1413308528": {
+   "prefab": "PF_EggClutchDeposit",
+   "nameKey": "",
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "4049957858": {
+   "prefab": "PF_EggYolkDeposit",
+   "nameKey": "Item_EggYolk_Name",
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "2489710674": {
+   "prefab": "PF_MiniYolkDeposit",
+   "nameKey": "",
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "1776055166": {
+   "prefab": "SM_Item_Pill",
+   "nameKey": "Item_Pill_Name",
+   "maxDurability": 0,
+   "scrapValue": 500
+  },
+  "2264362880": {
+   "prefab": "SM_Item_PizzaSlice",
+   "nameKey": "Item_PizzaSlice_Name",
+   "maxDurability": 0,
+   "scrapValue": 500
+  },
+  "730998205": {
+   "prefab": "PF_GolfCart_Tier3",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "4274596623": {
+   "prefab": "PF_GolfCart_Tier4",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "603931540": {
+   "prefab": "PF_GolfCart_Tier2",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "1975127212": {
+   "prefab": "PF_Item_Blowtorch",
+   "nameKey": "Item_Blowtorch_Name",
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "1262039744": {
+   "prefab": "PF_Item_Megaphone",
+   "nameKey": "Item_Megaphone_Name",
+   "maxDurability": 0,
+   "scrapValue": 500
+  },
+  "3553082563": {
+   "prefab": "PF_Item_Flashlight",
+   "nameKey": "Item_Flashlight_Name",
+   "maxDurability": 0,
+   "scrapValue": 500
+  },
+  "513427413": {
+   "prefab": "PF_Item_Scanner",
+   "nameKey": "Item_Scanner_Name",
+   "maxDurability": 0,
+   "scrapValue": 500
+  },
+  "1230419075": {
+   "prefab": "PF_Hat_Party",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "4069428317": {
+   "prefab": "PF_Item_Lantern",
+   "nameKey": "Item_Lantern_Name",
+   "maxDurability": 0,
+   "scrapValue": 500
+  },
+  "603139723": {
+   "prefab": "PF_Item_Toolbox_Tier2",
+   "nameKey": "Item_Toolbox_Tier2_Name",
+   "maxDurability": 0,
+   "scrapValue": 500
+  },
+  "3432922346": {
+   "prefab": "PF_Item_Chainsaw",
+   "nameKey": "Item_Chainsaw_Tier1_Name",
+   "maxDurability": 1000,
+   "scrapValue": 0
+  },
+  "3018402155": {
+   "prefab": "PF_Item_Jackhammer",
+   "nameKey": "Item_Jackhammer_Tier1_Name",
+   "maxDurability": 1000,
+   "scrapValue": 0
+  },
+  "2038056794": {
+   "prefab": "PF_Item_Toolbox_Tier1",
+   "nameKey": "Item_Toolbox_Tier1_Name",
+   "maxDurability": 0,
+   "scrapValue": 500
+  },
+  "311087400": {
+   "prefab": "PF_Player",
+   "nameKey": null,
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "858577846": {
+   "prefab": "PF_Item_Spike_Tier2",
+   "nameKey": "Item_Spike_Tier2_Name",
+   "maxDurability": 0,
+   "scrapValue": 500
+  },
+  "1115181008": {
+   "prefab": "PF_Item_Dynamite_Tier2",
+   "nameKey": "Item_Dynamite_Tier2_Name",
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "2837072909": {
+   "prefab": "PF_Item_Maddock_Tier1",
+   "nameKey": "Item_Maddock_Tier1_Name",
+   "maxDurability": 300,
+   "scrapValue": 500
+  },
+  "4140419951": {
+   "prefab": "PF_Item_Spike_Tier1",
+   "nameKey": "Item_Spike_Tier1_Name",
+   "maxDurability": 0,
+   "scrapValue": 500
+  },
+  "2286996620": {
+   "prefab": "PF_Item_Radio",
+   "nameKey": "Item_Radio_Name",
+   "maxDurability": 0,
+   "scrapValue": 500
+  },
+  "2453158029": {
+   "prefab": "PF_Item_Hammer_Tier2",
+   "nameKey": "Item_Hammer_Tier2_Name",
+   "maxDurability": 250,
+   "scrapValue": 500
+  },
+  "1067713955": {
+   "prefab": "PF_Item_Dynamite_Tier3",
+   "nameKey": "Item_Dynamite_Tier3_Name",
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "1273088988": {
+   "prefab": "PF_Item_Chisel_Tier2",
+   "nameKey": "Item_Chisel_Tier2_Name",
+   "maxDurability": 250,
+   "scrapValue": 500
+  },
+  "1336187827": {
+   "prefab": "PF_Item_Hammer_Tier3",
+   "nameKey": "Item_Hammer_Tier3_Name",
+   "maxDurability": 300,
+   "scrapValue": 500
+  },
+  "1717350434": {
+   "prefab": "PF_Item_Dynamite_Tier1",
+   "nameKey": "Item_Dynamite_Tier1_Name",
+   "maxDurability": 0,
+   "scrapValue": 0
+  },
+  "659146288": {
+   "prefab": "PF_Item_CandyCorn",
+   "nameKey": "Item_CandyCorn_Name",
+   "maxDurability": 0,
+   "scrapValue": 500
+  },
+  "3123441729": {
+   "prefab": "PF_Item_Shovel_Tier1",
+   "nameKey": "Item_Shovel_Tier1_Name",
+   "maxDurability": 150,
+   "scrapValue": 500
+  },
+  "1645005595": {
+   "prefab": "PF_Item_CookedChicken",
+   "nameKey": "Item_ChickenPiece_Name",
+   "maxDurability": 0,
+   "scrapValue": -1
+  },
+  "241473445": {
+   "prefab": "PF_Item_Hammer_Tier1",
+   "nameKey": "Item_Hammer_Tier1_Name",
+   "maxDurability": 200,
+   "scrapValue": 500
+  },
+  "2814151181": {
+   "prefab": "PF_Item_Wrench_Tier2",
+   "nameKey": "Item_Wrench_Tier2_Name",
+   "maxDurability": 200,
+   "scrapValue": 500
+  },
+  "3715882681": {
+   "prefab": "PF_Item_Bucket_Tier2",
+   "nameKey": "Item_Bucket_Tier2_Name",
+   "maxDurability": 0,
+   "scrapValue": 500
+  },
+  "4091346607": {
+   "prefab": "PF_Item_Pumpkin",
+   "nameKey": "Item_Pumpkin_Name",
+   "maxDurability": 0,
+   "scrapValue": 500
+  },
+  "3966628652": {
+   "prefab": "PF_Item_Shovel_Tier2",
+   "nameKey": "Item_Shovel_Tier2_Name",
+   "maxDurability": 200,
+   "scrapValue": 500
+  },
+  "989544982": {
+   "prefab": "PF_Item_Maddock_Tier2",
+   "nameKey": "Item_Maddock_Tier2_Name",
+   "maxDurability": 500,
+   "scrapValue": 500
+  }
+ },
+ "languages": [
+  "ENGLISH",
+  "SPANISH_ES",
+  "FRENCH",
+  "GERMAN",
+  "PORTUGUESE_BR",
+  "RUSSIAN",
+  "CHINESE_SIMP",
+  "JAPANESE",
+  "KOREAN",
+  "TURKISH",
+  "POLISH",
+  "ITALIAN",
+  "PORTUGUESE_PT",
+  "CHINESE_TRAD",
+  "SPANISH_LATAM",
+  "UKRAINIAN"
+ ],
+ "loc": {
+  "Item_Chisel_Tier1_Name": {
+   "de": "Meißel Mk I",
+   "en": "Chisel Mk I"
+  },
+  "Item_Dynamite_Tier3_Name": {
+   "de": "Dynamit Mk III",
+   "en": "Dynamite Mk III"
+  },
+  "Item_CandyCorn_Name": {
+   "de": "Candy Corn",
+   "en": "Candy Corn"
+  },
+  "Item_Bucket_Tier2_Name": {
+   "de": "Eimer Mk II",
+   "en": "Bucket Mk II"
+  },
+  "Item_Shovel_Tier1_Name": {
+   "de": "Schaufel Mk I",
+   "en": "Shovel Mk I"
+  },
+  "Item_Flashlight_Name": {
+   "de": "Taschenlampe",
+   "en": "Flashlight"
+  },
+  "Item_Chisel_Tier2_Name": {
+   "de": "Meißel Mk II",
+   "en": "Chisel Mk II"
+  },
+  "Item_Maddock_Tier2_Name": {
+   "de": "Kreuzhacke Mk II",
+   "en": "Mattock Mk II"
+  },
+  "Item_ChickenPiece_Name": {
+   "de": "Gebratenes „Hähnchen“",
+   "en": "Cooked \"Chicken\""
+  },
+  "Item_Wrench_Tier2_Name": {
+   "de": "Schraubenschlüssel Mk II",
+   "en": "Wrench Mk II"
+  },
+  "Item_Shovel_Tier2_Name": {
+   "de": "Schaufel Mk II",
+   "en": "Shovel Mk II"
+  },
+  "Item_Chainsaw_Tier1_Name": {
+   "de": "Kettensäge Mk I",
+   "en": "Chainsaw Mk I"
+  },
+  "Item_Toolbox_Tier2_Name": {
+   "de": "Werkzeugkiste Mk II",
+   "en": "Toolbox Mk II"
+  },
+  "Item_Grub_Name": {
+   "de": "Parasit",
+   "en": "Parasite"
+  },
+  "Item_Crystal_Pink_Name": {
+   "de": "Pinker Chalazit",
+   "en": "Pink Chalazite"
+  },
+  "Item_Bucket_Tier1_Name": {
+   "de": "Eimer Mk I",
+   "en": "Bucket Mk I"
+  },
+  "Item_Pumpkin_Name": {
+   "de": "Kürbis",
+   "en": "Pumpkin"
+  },
+  "Item_Hammer_Tier1_Name": {
+   "de": "Hammer Mk I",
+   "en": "Hammer Mk I"
+  },
+  "Item_Crystal_Blue_Name": {
+   "de": "Blauer Chalazit",
+   "en": "Blue Chalazite"
+  },
+  "Item_Spike_Tier1_Name": {
+   "de": "Pflock Mk I",
+   "en": "Support Spike Mk I"
+  },
+  "Item_Marker_Red_Name": {
+   "de": "Roter Marker",
+   "en": "Red Marker"
+  },
+  "Item_Megaphone_Name": {
+   "de": "Megafon",
+   "en": "Megaphone"
+  },
+  "Shop_Catalog_Tier2": {
+   "de": "MITTEL",
+   "en": "INTERMEDIATE"
+  },
+  "Item_Marker_Green_Name": {
+   "de": "Grüner Marker",
+   "en": "Green Marker"
+  },
+  "Item_Bucket_Tier3_Name": {
+   "de": "Eimer Mk III",
+   "en": "Bucket Mk III"
+  },
+  "Item_Marker_Black_Name": {
+   "de": "Schwarzer Marker",
+   "en": "Black Marker"
+  },
+  "Item_EggYolk_Name": {
+   "de": "Schutzsack",
+   "en": "Containment Sac"
+  },
+  "Item_Toolbox_Tier1_Name": {
+   "de": "Werkzeugkiste Mk I",
+   "en": "Toolbox Mk I"
+  },
+  "Item_Handbook_Name": {
+   "de": "Mitarbeiterhandbuch",
+   "en": "Employee Handbook"
+  },
+  "Shop_Catalog_Tier4": {
+   "de": "SPEZIAL",
+   "en": "SPECIALTY"
+  },
+  "Item_Eraser_Name": {
+   "de": "Schwamm",
+   "en": "Eraser"
+  },
+  "Item_Crystal_Green_Name": {
+   "de": "Grüner Chalazit",
+   "en": "Green Chalazite"
+  },
+  "Item_Basketball_Name": {
+   "de": "Basketball",
+   "en": "Basketball"
+  },
+  "Item_Blowtorch_Name": {
+   "de": "Lötbrenner",
+   "en": "Blowtorch"
+  },
+  "Item_Radio_Name": {
+   "de": "Boombox",
+   "en": "Boombox"
+  },
+  "Item_Pickaxe_Tier1_Name": {
+   "de": "Spitzhacke Mk I",
+   "en": "Pickaxe Mk I"
+  },
+  "Item_Hammer_Tier2_Name": {
+   "de": "Hammer Mk II",
+   "en": "Hammer Mk II"
+  },
+  "Item_PizzaSlice_Name": {
+   "de": "Pizzastück",
+   "en": "Pizza Slice"
+  },
+  "Item_Bucket_Tier4_Name": {
+   "de": "Eimer Mk IV",
+   "en": "Bucket Mk IV"
+  },
+  "Item_Spike_Tier2_Name": {
+   "de": "Pflock Mk II",
+   "en": "Support Spike Mk II"
+  },
+  "Item_TutorialClipboard_Name": {
+   "de": "Klemmbrett",
+   "en": "Clipboard"
+  },
+  "Item_Dynamite_Tier2_Name": {
+   "de": "Dynamit Mk II",
+   "en": "Dynamite Mk II"
+  },
+  "Item_Marker_Blue_Name": {
+   "de": "Blauer Marker",
+   "en": "Blue Marker"
+  },
+  "Item_Shovel_Tier3_Name": {
+   "de": "Schaufel Mk III",
+   "en": "Shovel Mk III"
+  },
+  "Item_Egg_Name": {
+   "de": "Ei",
+   "en": "Egg"
+  },
+  "Item_Chicken_Name": {
+   "de": "Huhn?",
+   "en": "Chicken?"
+  },
+  "Item_Jackhammer_Tier1_Name": {
+   "de": "Presslufthammer Mk I",
+   "en": "Jackhammer Mk I"
+  },
+  "Item_Maddock_Tier1_Name": {
+   "de": "Kreuzhacke Mk I",
+   "en": "Mattock Mk I"
+  },
+  "Shop_Catalog_Tier3": {
+   "de": "ERWEITERT",
+   "en": "ADVANCED"
+  },
+  "Shop_Catalog_Tier6": {
+   "de": "PROFI",
+   "en": "PROGRADE"
+  },
+  "Item_Pickaxe_Tier2_Name": {
+   "de": "Spitzhacke Mk II",
+   "en": "Pickaxe Mk II"
+  },
+  "Item_Scanner_Name": {
+   "de": "Gelände-Scanner",
+   "en": "Terrain Scanner"
+  },
+  "Shop_Catalog_Tier1": {
+   "de": "STANDARD",
+   "en": "STANDARD"
+  },
+  "Item_Pill_Name": {
+   "de": "Pille",
+   "en": "Pill"
+  },
+  "Item_Wrench_Tier1_Name": {
+   "de": "Schraubenschlüssel Mk I",
+   "en": "Wrench Mk I"
+  },
+  "Item_Crystal_Cube_Name": {
+   "de": "Würfel-Chalazit",
+   "en": "Cube Chalazite"
+  },
+  "Item_Crystal_Purple_Name": {
+   "de": "Violetter Chalazit",
+   "en": "Purple Chalazite"
+  },
+  "Item_Lantern_Name": {
+   "de": "Laterne",
+   "en": "Lantern"
+  },
+  "Shop_Catalog_Tier5": {
+   "de": "DIREKTION",
+   "en": "EXECUTIVE"
+  },
+  "Item_Dynamite_Tier1_Name": {
+   "de": "Dynamit Mk I",
+   "en": "Dynamite Mk I"
+  },
+  "Item_CalciumDeposit_Name": {
+   "de": "Knorpelknoten",
+   "en": "Gristle Nodule"
+  },
+  "Item_Hammer_Tier3_Name": {
+   "de": "Hammer Mk III",
+   "en": "Hammer Mk III"
+  }
+ },
+ "locAll": {
+  "WorkOrder_Step_Peel": {
+   "de": "Knacke die Schale und schäle {0} Brocken ab",
+   "en": "Split and peel {0} chunks off the shell"
+  },
+  "WorkOrder_Step_ShellBuckets": {
+   "de": "Gib {0} Eimer Schalenbruch ab",
+   "en": "Deposit {0} buckets of shell fragments"
+  },
+  "WorkOrder_Step_ShellValue": {
+   "de": "Gib Schalenbruch im Wert von {0} ab",
+   "en": "Deposit {0} worth of shell fragments"
+  },
+  "WorkOrder_Step_MembraneBuckets": {
+   "de": "Gib {0} Eimer Membran ab",
+   "en": "Deposit {0} buckets of membrane"
+  },
+  "WorkOrder_Step_MembraneValue": {
+   "de": "Gib Membran im Wert von {0} ab",
+   "en": "Deposit {0} worth of membrane"
+  },
+  "WorkOrder_Step_Asteroids": {
+   "de": "Hol {0} Punkte am EIEROIDEN-Automaten",
+   "en": "Score {0} on the EGGSTEROIDS cabinet"
+  },
+  "WorkOrder_Step_AnyValue": {
+   "de": "Gib Material im Wert von {0} ab",
+   "en": "Deposit {0} worth of material"
+  },
+  "WorkOrder_Step_InfectionValue": {
+   "de": "Gib Fäule im Wert von {0} ab",
+   "en": "Deposit {0} worth of blight"
+  },
+  "WorkOrder_Step_BurstArterySacks": {
+   "de": "Lass {0} Arteriensäcke platzen",
+   "en": "Burst open {0} artery sacks"
+  },
+  "WorkOrder_Step_FindCrystals": {
+   "de": "Finde {0} Chalazit-Kristalle",
+   "en": "Find {0} Chalazite Crystals"
+  },
+  "WorkOrder_Step_BurstArterySack": {
+   "de": "Lass einen Arteriensack platzen",
+   "en": "Burst open an artery sack"
+  },
+  "WorkOrder_Step_CalciteValue": {
+   "de": "Gib Kalzit im Wert von {0} ab",
+   "en": "Deposit {0} worth of calcite"
+  },
+  "WorkOrder_Step_PrimeTissueValue": {
+   "de": "Gib Edelfleisch im Wert von {0} ab",
+   "en": "Deposit {0} worth of prime tissue"
+  },
+  "WorkOrder_Step_HatchiteValue": {
+   "de": "Gib Hatchit im Wert von {0} ab",
+   "en": "Deposit {0} worth of hatchite"
+  },
+  "WorkOrder_Step_BreachShield": {
+   "de": "Finde den Schutzpanzer und brich ihn auf",
+   "en": "Locate and breach the containment plating"
+  },
+  "WorkOrder_Step_BoneValue": {
+   "de": "Gib Knochen im Wert von {0} ab",
+   "en": "Deposit {0} worth of bone"
+  },
+  "WorkOrder_Step_FleshValue": {
+   "de": "Gib Gewebe im Wert von {0} ab",
+   "en": "Deposit {0} worth of tissue"
+  },
+  "WorkOrder_Step_CalciumShred": {
+   "de": "Schreddere {0} Knorpelknoten",
+   "en": "Shred {0} gristle nodules"
+  },
+  "WorkOrder_Step_ScanCalcium": {
+   "de": "Finde {0} Knorpelknoten mit dem Scanner",
+   "en": "Locate {0} gristle nodules with the Deposit Scanner"
+  },
+  "WorkOrder_Step_ScanCrystal": {
+   "de": "Finde einen Chalazit-Kristall mit dem Scanner",
+   "en": "Locate a Chalazite Crystal with the Deposit Scanner"
+  },
+  "WorkOrder_Step_ShredGrubs": {
+   "de": "Schreddere {0} Parasiten",
+   "en": "Shred {0} parasites"
+  },
+  "WorkOrder_Step_BuyRobots": {
+   "de": "Nimm {0} Arbeitsbots in Betrieb",
+   "en": "Commission {0} workbots"
+  },
+  "WorkOrder_Step_ScaffoldHeight": {
+   "de": "Baue ein {0} hohes Gerüst",
+   "en": "Build scaffolding {0} tall"
+  },
+  "WorkOrder_Step_Scaffold": {
+   "de": "Baue {0} Gerüstteile auf",
+   "en": "Erect {0} sections of scaffolding"
+  },
+  "WorkOrder_Step_SlotWin": {
+   "de": "Gewinne {0} mit einer einzigen Auszahlung am Spielautomaten",
+   "en": "Win {0} on a single slot machine payout"
+  },
+  "WorkOrder_Step_UpgradeBots": {
+   "de": "Verbessere Arbeitsbots mit Chalazit-Kristallen um {0} Stufen",
+   "en": "Upgrade workbots {0} levels with Chalazite Crystals"
+  },
+  "WorkOrder_Step_UpgradeScanner": {
+   "de": "Verbessere den Scanner",
+   "en": "Upgrade the Deposit Scanner"
+  },
+  "WorkOrder_Step_UpgradeCart": {
+   "de": "Verbessere einen Golfwagen in der Fahrzeughalle",
+   "en": "Upgrade a golf cart"
+  },
+  "WorkOrder_Step_Yolk": {
+   "de": "Brich den Schutzsack auf und befreie das Exemplar",
+   "en": "Breach the containment sac and release the specimen"
+  },
+  "Bot_Collector_Name": {
+   "de": "SAMMLERBOT",
+   "en": "COLLECTOR BOT"
+  },
+  "Bot_Drone_Name": {
+   "de": "LIEFERDROHNE",
+   "en": "DELIVERY DRONE"
+  }
+ }
+}

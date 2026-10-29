@@ -1,0 +1,175 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:l="clr-namespace:CrackSaveEditor.Core"
+                    xmlns:vm="clr-namespace:CrackSaveEditor.ViewModels">
+
+    <DataTemplate DataType="{x:Type vm:UpgradesVm}">
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel Margin="28,6,28,28">
+                <TextBlock Text="Upgrades" Style="{StaticResource H1}"/>
+                <TextBlock Style="{StaticResource MutedText}" Margin="0,4,0,20"
+                           Text="{l:T 'Scanner tiers, robot levels, garages and vehicles. Limits and prices come straight from the game data.'}"/>
+
+                <!-- Scanner -->
+                <Border Style="{StaticResource CardBorder}">
+                    <StackPanel>
+                        <DockPanel Margin="0,0,0,14">
+                            <Button DockPanel.Dock="Right" Command="{Binding MaxScannerCommand}" Content="{l:T 'Max all'}" Style="{StaticResource ChipButton}" Margin="0"/>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="&#xE9F9;" FontFamily="{StaticResource Icons}" FontSize="18" Foreground="{StaticResource Accent2}" VerticalAlignment="Center"/>
+                                <TextBlock Text="Scanner" Style="{StaticResource H2}" Margin="10,0,0,0"/>
+                            </StackPanel>
+                        </DockPanel>
+                        <ItemsControl ItemsSource="{Binding Scanner}">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate DataType="{x:Type vm:ScannerTrackVm}">
+                                    <Grid Margin="0,6">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="160"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="90"/>
+                                            <ColumnDefinition Width="200"/>
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock Text="{Binding Label}" VerticalAlignment="Center" FontWeight="SemiBold"/>
+                                        <Slider Grid.Column="1" Minimum="0" Maximum="{Binding Max}" Value="{Binding Level}" TickFrequency="1" IsSnapToTickEnabled="True" VerticalAlignment="Center"/>
+                                        <TextBlock Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Right" FontFamily="{StaticResource Mono}">
+                                            <Run Text="{Binding Level, Mode=OneWay}" Foreground="{StaticResource Accent2}"/><Run Text=" / " Foreground="{StaticResource Muted}"/><Run Text="{Binding Max, Mode=OneWay}" Foreground="{StaticResource Muted}"/>
+                                        </TextBlock>
+                                        <StackPanel Grid.Column="3" Margin="18,0,0,0" VerticalAlignment="Center">
+                                            <TextBlock Text="{Binding ValueText}" FontSize="12.5"/>
+                                            <TextBlock Text="{Binding NextText}" FontSize="11.5" Foreground="{StaticResource Muted}"/>
+                                        </StackPanel>
+                                    </Grid>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </StackPanel>
+                </Border>
+
+                <!-- Bots -->
+                <Border Style="{StaticResource CardBorder}">
+                    <StackPanel>
+                        <DockPanel Margin="0,0,0,14">
+                            <Button DockPanel.Dock="Right" Command="{Binding MaxBotsCommand}" Content="{l:T 'All to max level'}" Style="{StaticResource ChipButton}" Margin="0"/>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="&#xE99A;" FontFamily="{StaticResource Icons}" FontSize="18" Foreground="{StaticResource Accent2}" VerticalAlignment="Center"/>
+                                <TextBlock Text="{l:T 'Robots'}" Style="{StaticResource H2}" Margin="10,0,0,0"/>
+                            </StackPanel>
+                        </DockPanel>
+                        <ItemsControl ItemsSource="{Binding Bots}">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <UniformGrid Columns="2"/>
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate DataType="{x:Type vm:BotVm}">
+                                    <Border Background="{StaticResource Input}" CornerRadius="10" Padding="14,10" Margin="0,0,10,10">
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="150"/>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="60"/>
+                                            </Grid.ColumnDefinitions>
+                                            <TextBlock Text="{Binding Glyph}" FontFamily="{StaticResource Icons}" FontSize="16" Foreground="{StaticResource Muted}" VerticalAlignment="Center"/>
+                                            <TextBlock Grid.Column="1" Text="{Binding Name}" Margin="10,0,0,0" VerticalAlignment="Center"/>
+                                            <Slider Grid.Column="2" Minimum="1" Maximum="{Binding Max}" Value="{Binding Level}" TickFrequency="1" IsSnapToTickEnabled="True" VerticalAlignment="Center"/>
+                                            <TextBlock Grid.Column="3" HorizontalAlignment="Right" VerticalAlignment="Center" FontFamily="{StaticResource Mono}">
+                                                <Run Text="Lv " Foreground="{StaticResource Muted}"/><Run Text="{Binding Level, Mode=OneWay}" Foreground="{StaticResource Accent2}"/>
+                                            </TextBlock>
+                                        </Grid>
+                                    </Border>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </StackPanel>
+                </Border>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="14"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <!-- Garage terminals -->
+                    <Border Style="{StaticResource CardBorder}">
+                        <StackPanel>
+                            <DockPanel Margin="0,0,0,12">
+                                <Button DockPanel.Dock="Right" Command="{Binding UnlockAllCommand}" Content="{l:T 'Unlock all'}" Style="{StaticResource ChipButton}" Margin="0"/>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="&#xE72E;" FontFamily="{StaticResource Icons}" FontSize="18" Foreground="{StaticResource Accent2}" VerticalAlignment="Center"/>
+                                    <TextBlock Text="{l:T 'Garage terminals'}" Style="{StaticResource H2}" Margin="10,0,0,0"/>
+                                </StackPanel>
+                            </DockPanel>
+                            <ItemsControl ItemsSource="{Binding Terminals}">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate DataType="{x:Type vm:TerminalVm}">
+                                        <CheckBox IsChecked="{Binding Unlocked}" Margin="0,5">
+                                            <TextBlock>
+                                                <Run Text="{Binding Name, Mode=OneWay}"/>
+                                                <Run Text="{Binding Id, Mode=OneWay}" Foreground="{StaticResource Muted}" FontSize="11.5"/>
+                                            </TextBlock>
+                                        </CheckBox>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </StackPanel>
+                    </Border>
+
+                    <StackPanel Grid.Column="2">
+                        <!-- Carts -->
+                        <Border Style="{StaticResource CardBorder}">
+                            <StackPanel>
+                                <DockPanel Margin="0,0,0,12">
+                                    <Button DockPanel.Dock="Right" Command="{Binding MaxCartsCommand}" Content="{l:T 'Max tier'}" Style="{StaticResource ChipButton}" Margin="0"/>
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="&#xE804;" FontFamily="{StaticResource Icons}" FontSize="18" Foreground="{StaticResource Accent2}" VerticalAlignment="Center"/>
+                                        <TextBlock Text="{l:T 'Golf carts'}" Style="{StaticResource H2}" Margin="10,0,0,0"/>
+                                    </StackPanel>
+                                </DockPanel>
+                                <ItemsControl ItemsSource="{Binding Carts}">
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate DataType="{x:Type vm:CartVm}">
+                                            <Grid Margin="0,6">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="110"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="90"/>
+                                                </Grid.ColumnDefinitions>
+                                                <TextBlock Text="{Binding Name}" VerticalAlignment="Center"/>
+                                                <Slider Grid.Column="1" Minimum="1" Maximum="{Binding Max}" Value="{Binding Tier}" TickFrequency="1" IsSnapToTickEnabled="True" VerticalAlignment="Center"/>
+                                                <TextBlock Grid.Column="2" Text="{Binding TierText}" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="{StaticResource Accent2}"/>
+                                            </Grid>
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+                                <TextBlock Style="{StaticResource MutedText}" Margin="0,8,0,0"
+                                           Text="{l:T 'Higher tiers are faster and carry more. Tip: park the cart in the garage before saving.'}"/>
+                            </StackPanel>
+                        </Border>
+
+                        <!-- Keypads -->
+                        <Border Style="{StaticResource CardBorder}">
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
+                                    <TextBlock Text="&#xE75F;" FontFamily="{StaticResource Icons}" FontSize="18" Foreground="{StaticResource Accent2}" VerticalAlignment="Center"/>
+                                    <TextBlock Text="{l:T 'Keypads'}" Style="{StaticResource H2}" Margin="10,0,0,0"/>
+                                </StackPanel>
+                                <ItemsControl ItemsSource="{Binding Keypads}">
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate DataType="{x:Type vm:KeypadVm}">
+                                            <CheckBox IsChecked="{Binding Unlocked}" Content="{Binding Name}" Margin="0,5"/>
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+                                <TextBlock Style="{StaticResource MutedText}" Margin="0,8,0,0" Text="{l:T 'Opens the door behind the code puzzle without hunting for clues.'}"/>
+                            </StackPanel>
+                        </Border>
+                    </StackPanel>
+                </Grid>
+            </StackPanel>
+        </ScrollViewer>
+    </DataTemplate>
+</ResourceDictionary>

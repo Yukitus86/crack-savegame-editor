@@ -1,0 +1,23 @@
+﻿<Application x:Class="CrackSaveEditor.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             ShutdownMode="OnMainWindowClose">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Themes/Dark.xaml"/>
+                <!-- One DataTemplate per page view model; MainWindow just sets the view model as content. -->
+                <ResourceDictionary Source="Views/DashboardView.xaml"/>
+                <ResourceDictionary Source="Views/FinanceView.xaml"/>
+                <ResourceDictionary Source="Views/UpgradesView.xaml"/>
+                <ResourceDictionary Source="Views/ShopView.xaml"/>
+                <ResourceDictionary Source="Views/ItemsView.xaml"/>
+                <ResourceDictionary Source="Views/WorldView.xaml"/>
+                <ResourceDictionary Source="Views/PlayersView.xaml"/>
+                <ResourceDictionary Source="Views/TimelapseView.xaml"/>
+                <ResourceDictionary Source="Views/RawJsonView.xaml"/>
+                <ResourceDictionary Source="Views/SystemViews.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
