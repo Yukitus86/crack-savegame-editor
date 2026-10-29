@@ -5,7 +5,7 @@ A save editor for **[CRACK](https://store.steampowered.com/search/?term=CRACK%20
 Unofficial fan tool, not affiliated with Rafoli.
 
 [![Latest release](https://img.shields.io/github/v/release/Yukitus86/crack-savegame-editor)](../../releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/Yukitus86/crack-savegame-editor/total)](../../releases)
+[![Downloads](https://img.shields.io/github/downloads/Yukitus86/crack-savegame-editor/total?label=downloads)](../../releases)
 ![Windows x64](https://img.shields.io/badge/Windows-x64-0078D6)
 ![.NET 10](https://img.shields.io/badge/.NET-10-512BD4)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
