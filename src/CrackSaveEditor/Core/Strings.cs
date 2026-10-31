@@ -68,6 +68,8 @@ public static class Strings
         ["Spawn"] = "Spawnen",
         ["Crew members, sleep stats, tips, handbook and announcements."] = "Crew-Mitglieder, Schlaf-Statistik, Tipps, Handbuch und Durchsagen.",
         ["Nights in bed"] = "Nächte im Bett",
+        ["Hotbar slots (2-4)"] = "Hotbar-Plätze (2-4)",
+        ["{0} hotbar slots"] = "{0} Hotbar-Plätze",
         ["Reset tips"] = "Tipps zurücksetzen",
         ["LIFETIME SHIFT STATS"] = "LEBENSLANGE SCHICHT-STATISTIK",
         ["Handbook entries"] = "Handbuch-Freigaben",

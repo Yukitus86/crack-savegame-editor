@@ -136,6 +136,7 @@
     "Pickaxe_Tier2",
     "Chisel_Tier2",
     "Bucket_Tier2",
+    "Satchel",
     "Flashlight",
     "Lantern"
    ]
@@ -454,6 +455,15 @@
    "maxPurchases": 2,
    "resetDaily": true,
    "assetId": 1479070318
+  },
+  {
+   "id": "Satchel",
+   "nameKey": "Item_Satchel_Name",
+   "price": 8995,
+   "shippingCents": 0,
+   "maxPurchases": 4,
+   "resetDaily": true,
+   "assetId": 2302916621
   },
   {
    "id": "Scanner",
@@ -778,19 +788,19 @@
   "2543090715": {
    "prefab": "PF_Item_Shovel_Tier3",
    "nameKey": "Item_Shovel_Tier3_Name",
-   "maxDurability": 250,
+   "maxDurability": 350,
    "scrapValue": 500
   },
   "2413928369": {
    "prefab": "PF_Item_Chisel_Tier1",
    "nameKey": "Item_Chisel_Tier1_Name",
-   "maxDurability": 150,
+   "maxDurability": 200,
    "scrapValue": 500
   },
   "2966864608": {
    "prefab": "PF_Item_Pickaxe_Tier1",
    "nameKey": "Item_Pickaxe_Tier1_Name",
-   "maxDurability": 150,
+   "maxDurability": 200,
    "scrapValue": 500
   },
   "1421870705": {
@@ -802,7 +812,7 @@
   "1479070318": {
    "prefab": "PF_Item_Pickaxe_Tier2",
    "nameKey": "Item_Pickaxe_Tier2_Name",
-   "maxDurability": 250,
+   "maxDurability": 400,
    "scrapValue": 500
   },
   "1728955620": {
@@ -1201,6 +1211,12 @@
    "maxDurability": 0,
    "scrapValue": 500
   },
+  "2302916621": {
+   "prefab": "PF_Item_Satchel",
+   "nameKey": "Item_Satchel_Name",
+   "maxDurability": 0,
+   "scrapValue": 500
+  },
   "1115181008": {
    "prefab": "PF_Item_Dynamite_Tier2",
    "nameKey": "Item_Dynamite_Tier2_Name",
@@ -1240,7 +1256,7 @@
   "1273088988": {
    "prefab": "PF_Item_Chisel_Tier2",
    "nameKey": "Item_Chisel_Tier2_Name",
-   "maxDurability": 250,
+   "maxDurability": 400,
    "scrapValue": 500
   },
   "1336187827": {
@@ -1264,7 +1280,7 @@
   "3123441729": {
    "prefab": "PF_Item_Shovel_Tier1",
    "nameKey": "Item_Shovel_Tier1_Name",
-   "maxDurability": 150,
+   "maxDurability": 200,
    "scrapValue": 500
   },
   "1645005595": {
@@ -1300,7 +1316,7 @@
   "3966628652": {
    "prefab": "PF_Item_Shovel_Tier2",
    "nameKey": "Item_Shovel_Tier2_Name",
-   "maxDurability": 200,
+   "maxDurability": 300,
    "scrapValue": 500
   },
   "989544982": {
@@ -1329,45 +1345,193 @@
   "UKRAINIAN"
  ],
  "loc": {
-  "Item_Chisel_Tier1_Name": {
-   "de": "Meißel Mk I",
-   "en": "Chisel Mk I"
+  "Item_ChickenPiece_Name": {
+   "de": "Gebratenes „Hähnchen“",
+   "en": "Cooked \"Chicken\""
   },
-  "Item_Dynamite_Tier3_Name": {
-   "de": "Dynamit Mk III",
-   "en": "Dynamite Mk III"
+  "Item_Hammer_Tier3_Name": {
+   "de": "Hammer Mk III",
+   "en": "Hammer Mk III"
   },
   "Item_CandyCorn_Name": {
    "de": "Candy Corn",
    "en": "Candy Corn"
   },
-  "Item_Bucket_Tier2_Name": {
-   "de": "Eimer Mk II",
-   "en": "Bucket Mk II"
+  "Item_Jackhammer_Tier1_Name": {
+   "de": "Presslufthammer Mk I",
+   "en": "Jackhammer Mk I"
+  },
+  "Item_Grub_Name": {
+   "de": "Parasit",
+   "en": "Parasite"
   },
   "Item_Shovel_Tier1_Name": {
    "de": "Schaufel Mk I",
    "en": "Shovel Mk I"
   },
+  "Item_EggYolk_Name": {
+   "de": "Schutzsack",
+   "en": "Containment Sac"
+  },
+  "Item_Marker_Blue_Name": {
+   "de": "Blauer Marker",
+   "en": "Blue Marker"
+  },
+  "Item_Pickaxe_Tier2_Name": {
+   "de": "Spitzhacke Mk II",
+   "en": "Pickaxe Mk II"
+  },
+  "Item_Chicken_Name": {
+   "de": "Huhn?",
+   "en": "Chicken?"
+  },
+  "Item_Lantern_Name": {
+   "de": "Laterne",
+   "en": "Lantern"
+  },
+  "Shop_Catalog_Tier4": {
+   "de": "SPEZIAL",
+   "en": "SPECIALTY"
+  },
+  "Item_Crystal_Pink_Name": {
+   "de": "Pinker Chalazit",
+   "en": "Pink Chalazite"
+  },
+  "Item_Spike_Tier1_Name": {
+   "de": "Pflock Mk I",
+   "en": "Support Spike Mk I"
+  },
+  "Item_Pill_Name": {
+   "de": "Pille",
+   "en": "Pill"
+  },
+  "Item_Wrench_Tier2_Name": {
+   "de": "Schraubenschlüssel Mk II",
+   "en": "Wrench Mk II"
+  },
+  "Item_Megaphone_Name": {
+   "de": "Megafon",
+   "en": "Megaphone"
+  },
+  "Item_Maddock_Tier1_Name": {
+   "de": "Kreuzhacke Mk I",
+   "en": "Mattock Mk I"
+  },
+  "Item_Dynamite_Tier1_Name": {
+   "de": "Dynamit Mk I",
+   "en": "Dynamite Mk I"
+  },
+  "Item_Toolbox_Tier2_Name": {
+   "de": "Werkzeugkiste Mk II",
+   "en": "Toolbox Mk II"
+  },
+  "Item_Marker_Black_Name": {
+   "de": "Schwarzer Marker",
+   "en": "Black Marker"
+  },
+  "Item_Spike_Tier2_Name": {
+   "de": "Pflock Mk II",
+   "en": "Support Spike Mk II"
+  },
+  "Item_Dynamite_Tier2_Name": {
+   "de": "Dynamit Mk II",
+   "en": "Dynamite Mk II"
+  },
+  "Item_PizzaSlice_Name": {
+   "de": "Pizzastück",
+   "en": "Pizza Slice"
+  },
+  "Shop_Catalog_Tier3": {
+   "de": "ERWEITERT",
+   "en": "ADVANCED"
+  },
+  "Item_Hammer_Tier2_Name": {
+   "de": "Hammer Mk II",
+   "en": "Hammer Mk II"
+  },
+  "Item_Satchel_Name": {
+   "de": "",
+   "en": "Satchel"
+  },
+  "Item_Chisel_Tier1_Name": {
+   "de": "Meißel Mk I",
+   "en": "Chisel Mk I"
+  },
+  "Item_Blowtorch_Name": {
+   "de": "Lötbrenner",
+   "en": "Blowtorch"
+  },
+  "Item_Crystal_Green_Name": {
+   "de": "Grüner Chalazit",
+   "en": "Green Chalazite"
+  },
   "Item_Flashlight_Name": {
    "de": "Taschenlampe",
    "en": "Flashlight"
+  },
+  "Item_Radio_Name": {
+   "de": "Boombox",
+   "en": "Boombox"
+  },
+  "Item_Bucket_Tier2_Name": {
+   "de": "Eimer Mk II",
+   "en": "Bucket Mk II"
+  },
+  "Item_Bucket_Tier1_Name": {
+   "de": "Eimer Mk I",
+   "en": "Bucket Mk I"
+  },
+  "Item_Crystal_Blue_Name": {
+   "de": "Blauer Chalazit",
+   "en": "Blue Chalazite"
+  },
+  "Item_CalciumDeposit_Name": {
+   "de": "Knorpelknoten",
+   "en": "Gristle Nodule"
+  },
+  "Item_Pumpkin_Name": {
+   "de": "Kürbis",
+   "en": "Pumpkin"
+  },
+  "Item_Wrench_Tier1_Name": {
+   "de": "Schraubenschlüssel Mk I",
+   "en": "Wrench Mk I"
+  },
+  "Item_Handbook_Name": {
+   "de": "Mitarbeiterhandbuch",
+   "en": "Employee Handbook"
+  },
+  "Item_Marker_Green_Name": {
+   "de": "Grüner Marker",
+   "en": "Green Marker"
+  },
+  "Item_TutorialClipboard_Name": {
+   "de": "Klemmbrett",
+   "en": "Clipboard"
+  },
+  "Item_Bucket_Tier4_Name": {
+   "de": "Eimer Mk IV",
+   "en": "Bucket Mk IV"
+  },
+  "Item_Pickaxe_Tier1_Name": {
+   "de": "Spitzhacke Mk I",
+   "en": "Pickaxe Mk I"
+  },
+  "Item_Marker_Red_Name": {
+   "de": "Roter Marker",
+   "en": "Red Marker"
   },
   "Item_Chisel_Tier2_Name": {
    "de": "Meißel Mk II",
    "en": "Chisel Mk II"
   },
-  "Item_Maddock_Tier2_Name": {
-   "de": "Kreuzhacke Mk II",
-   "en": "Mattock Mk II"
+  "Item_Crystal_Purple_Name": {
+   "de": "Violetter Chalazit",
+   "en": "Purple Chalazite"
   },
-  "Item_ChickenPiece_Name": {
-   "de": "Gebratenes „Hähnchen“",
-   "en": "Cooked \"Chicken\""
-  },
-  "Item_Wrench_Tier2_Name": {
-   "de": "Schraubenschlüssel Mk II",
-   "en": "Wrench Mk II"
+  "Shop_Catalog_Tier5": {
+   "de": "DIREKTION",
+   "en": "EXECUTIVE"
   },
   "Item_Shovel_Tier2_Name": {
    "de": "Schaufel Mk II",
@@ -1377,205 +1541,61 @@
    "de": "Kettensäge Mk I",
    "en": "Chainsaw Mk I"
   },
-  "Item_Toolbox_Tier2_Name": {
-   "de": "Werkzeugkiste Mk II",
-   "en": "Toolbox Mk II"
-  },
-  "Item_Grub_Name": {
-   "de": "Parasit",
-   "en": "Parasite"
-  },
-  "Item_Crystal_Pink_Name": {
-   "de": "Pinker Chalazit",
-   "en": "Pink Chalazite"
-  },
-  "Item_Bucket_Tier1_Name": {
-   "de": "Eimer Mk I",
-   "en": "Bucket Mk I"
-  },
-  "Item_Pumpkin_Name": {
-   "de": "Kürbis",
-   "en": "Pumpkin"
-  },
-  "Item_Hammer_Tier1_Name": {
-   "de": "Hammer Mk I",
-   "en": "Hammer Mk I"
-  },
-  "Item_Crystal_Blue_Name": {
-   "de": "Blauer Chalazit",
-   "en": "Blue Chalazite"
-  },
-  "Item_Spike_Tier1_Name": {
-   "de": "Pflock Mk I",
-   "en": "Support Spike Mk I"
-  },
-  "Item_Marker_Red_Name": {
-   "de": "Roter Marker",
-   "en": "Red Marker"
-  },
-  "Item_Megaphone_Name": {
-   "de": "Megafon",
-   "en": "Megaphone"
-  },
-  "Shop_Catalog_Tier2": {
-   "de": "MITTEL",
-   "en": "INTERMEDIATE"
-  },
-  "Item_Marker_Green_Name": {
-   "de": "Grüner Marker",
-   "en": "Green Marker"
-  },
-  "Item_Bucket_Tier3_Name": {
-   "de": "Eimer Mk III",
-   "en": "Bucket Mk III"
-  },
-  "Item_Marker_Black_Name": {
-   "de": "Schwarzer Marker",
-   "en": "Black Marker"
-  },
-  "Item_EggYolk_Name": {
-   "de": "Schutzsack",
-   "en": "Containment Sac"
-  },
-  "Item_Toolbox_Tier1_Name": {
-   "de": "Werkzeugkiste Mk I",
-   "en": "Toolbox Mk I"
-  },
-  "Item_Handbook_Name": {
-   "de": "Mitarbeiterhandbuch",
-   "en": "Employee Handbook"
-  },
-  "Shop_Catalog_Tier4": {
-   "de": "SPEZIAL",
-   "en": "SPECIALTY"
-  },
-  "Item_Eraser_Name": {
-   "de": "Schwamm",
-   "en": "Eraser"
-  },
-  "Item_Crystal_Green_Name": {
-   "de": "Grüner Chalazit",
-   "en": "Green Chalazite"
-  },
-  "Item_Basketball_Name": {
-   "de": "Basketball",
-   "en": "Basketball"
-  },
-  "Item_Blowtorch_Name": {
-   "de": "Lötbrenner",
-   "en": "Blowtorch"
-  },
-  "Item_Radio_Name": {
-   "de": "Boombox",
-   "en": "Boombox"
-  },
-  "Item_Pickaxe_Tier1_Name": {
-   "de": "Spitzhacke Mk I",
-   "en": "Pickaxe Mk I"
-  },
-  "Item_Hammer_Tier2_Name": {
-   "de": "Hammer Mk II",
-   "en": "Hammer Mk II"
-  },
-  "Item_PizzaSlice_Name": {
-   "de": "Pizzastück",
-   "en": "Pizza Slice"
-  },
-  "Item_Bucket_Tier4_Name": {
-   "de": "Eimer Mk IV",
-   "en": "Bucket Mk IV"
-  },
-  "Item_Spike_Tier2_Name": {
-   "de": "Pflock Mk II",
-   "en": "Support Spike Mk II"
-  },
-  "Item_TutorialClipboard_Name": {
-   "de": "Klemmbrett",
-   "en": "Clipboard"
-  },
-  "Item_Dynamite_Tier2_Name": {
-   "de": "Dynamit Mk II",
-   "en": "Dynamite Mk II"
-  },
-  "Item_Marker_Blue_Name": {
-   "de": "Blauer Marker",
-   "en": "Blue Marker"
-  },
-  "Item_Shovel_Tier3_Name": {
-   "de": "Schaufel Mk III",
-   "en": "Shovel Mk III"
-  },
   "Item_Egg_Name": {
    "de": "Ei",
    "en": "Egg"
-  },
-  "Item_Chicken_Name": {
-   "de": "Huhn?",
-   "en": "Chicken?"
-  },
-  "Item_Jackhammer_Tier1_Name": {
-   "de": "Presslufthammer Mk I",
-   "en": "Jackhammer Mk I"
-  },
-  "Item_Maddock_Tier1_Name": {
-   "de": "Kreuzhacke Mk I",
-   "en": "Mattock Mk I"
-  },
-  "Shop_Catalog_Tier3": {
-   "de": "ERWEITERT",
-   "en": "ADVANCED"
-  },
-  "Shop_Catalog_Tier6": {
-   "de": "PROFI",
-   "en": "PROGRADE"
-  },
-  "Item_Pickaxe_Tier2_Name": {
-   "de": "Spitzhacke Mk II",
-   "en": "Pickaxe Mk II"
-  },
-  "Item_Scanner_Name": {
-   "de": "Gelände-Scanner",
-   "en": "Terrain Scanner"
   },
   "Shop_Catalog_Tier1": {
    "de": "STANDARD",
    "en": "STANDARD"
   },
-  "Item_Pill_Name": {
-   "de": "Pille",
-   "en": "Pill"
+  "Item_Shovel_Tier3_Name": {
+   "de": "Schaufel Mk III",
+   "en": "Shovel Mk III"
   },
-  "Item_Wrench_Tier1_Name": {
-   "de": "Schraubenschlüssel Mk I",
-   "en": "Wrench Mk I"
+  "Item_Eraser_Name": {
+   "de": "Schwamm",
+   "en": "Eraser"
+  },
+  "Item_Bucket_Tier3_Name": {
+   "de": "Eimer Mk III",
+   "en": "Bucket Mk III"
+  },
+  "Item_Scanner_Name": {
+   "de": "Gelände-Scanner",
+   "en": "Terrain Scanner"
+  },
+  "Item_Dynamite_Tier3_Name": {
+   "de": "Dynamit Mk III",
+   "en": "Dynamite Mk III"
+  },
+  "Shop_Catalog_Tier2": {
+   "de": "MITTEL",
+   "en": "INTERMEDIATE"
+  },
+  "Shop_Catalog_Tier6": {
+   "de": "PROFI",
+   "en": "PROGRADE"
+  },
+  "Item_Hammer_Tier1_Name": {
+   "de": "Hammer Mk I",
+   "en": "Hammer Mk I"
+  },
+  "Item_Basketball_Name": {
+   "de": "Basketball",
+   "en": "Basketball"
+  },
+  "Item_Maddock_Tier2_Name": {
+   "de": "Kreuzhacke Mk II",
+   "en": "Mattock Mk II"
   },
   "Item_Crystal_Cube_Name": {
    "de": "Würfel-Chalazit",
    "en": "Cube Chalazite"
   },
-  "Item_Crystal_Purple_Name": {
-   "de": "Violetter Chalazit",
-   "en": "Purple Chalazite"
-  },
-  "Item_Lantern_Name": {
-   "de": "Laterne",
-   "en": "Lantern"
-  },
-  "Shop_Catalog_Tier5": {
-   "de": "DIREKTION",
-   "en": "EXECUTIVE"
-  },
-  "Item_Dynamite_Tier1_Name": {
-   "de": "Dynamit Mk I",
-   "en": "Dynamite Mk I"
-  },
-  "Item_CalciumDeposit_Name": {
-   "de": "Knorpelknoten",
-   "en": "Gristle Nodule"
-  },
-  "Item_Hammer_Tier3_Name": {
-   "de": "Hammer Mk III",
-   "en": "Hammer Mk III"
+  "Item_Toolbox_Tier1_Name": {
+   "de": "Werkzeugkiste Mk I",
+   "en": "Toolbox Mk I"
   }
  },
  "locAll": {

@@ -38,7 +38,7 @@ Before every write the editor puts a ZIP of the slot into a `Backups` folder nex
 | **Shop** | Restock every item, then add, edit or remove daily deals (up to 100 % off) or put everything on sale. |
 | **Items & Tools** | Every object in the world with its real name, durability (*Repair all*), location and origin. Duplicate, delete or spawn items *(experimental)*. |
 | **World & Work Order** | Day, playtime, egg agitation, calming steps, burst pipes and flooding. Complete the current work order step. |
-| **Players** | Nights in bed, reset seen tips, handbook entries, the announcement history and lifetime shift stats. |
+| **Players** | Nights in bed, hotbar slots (2–4, normally unlocked with satchels), reset seen tips, handbook entries, the announcement history and lifetime shift stats. |
 | **Run & Ranking** | Read-only view of the run record: ranked status, run time and signature. |
 | **Timelapse** | Browse and play the hourly photos the game takes of the egg, and export them as a looping GIF. |
 | **Raw JSON** | Tree view of the whole decrypted save with search and type-safe editing. Export and import the decrypted JSON. |

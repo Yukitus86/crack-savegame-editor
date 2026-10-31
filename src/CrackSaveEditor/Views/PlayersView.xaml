@@ -26,6 +26,10 @@
                                             <TextBlock Text="{l:T 'Nights in bed'}" VerticalAlignment="Center" Foreground="{StaticResource Muted}" Width="140"/>
                                             <TextBox Text="{Binding NightsInBed, UpdateSourceTrigger=LostFocus}" Width="80"/>
                                         </StackPanel>
+                                        <StackPanel Orientation="Horizontal" Margin="0,8,0,0">
+                                            <TextBlock Text="{l:T 'Hotbar slots (2-4)'}" VerticalAlignment="Center" Foreground="{StaticResource Muted}" Width="140"/>
+                                            <TextBox Text="{Binding HotbarSlots, UpdateSourceTrigger=LostFocus}" Width="80" IsEnabled="{Binding CanEditHotbar}"/>
+                                        </StackPanel>
                                         <DockPanel Margin="0,14,0,0">
                                             <Button DockPanel.Dock="Right" Command="{Binding ResetTipsCommand}" Style="{StaticResource ChipButton}" Margin="10,0,0,0" Content="{l:T 'Reset tips'}" VerticalAlignment="Top"/>
                                             <StackPanel>

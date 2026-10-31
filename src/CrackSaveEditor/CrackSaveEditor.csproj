@@ -8,7 +8,7 @@
     <UseWPF>true</UseWPF>
     <AssemblyName>CrackSaveEditor</AssemblyName>
     <RootNamespace>CrackSaveEditor</RootNamespace>
-    <Version>1.1.0</Version>
+    <Version>1.2.0</Version>
     <Product>CRACK Savegame Editor</Product>
     <ApplicationIcon>Resources\app.ico</ApplicationIcon>
     <SatelliteResourceLanguages>de;en</SatelliteResourceLanguages>

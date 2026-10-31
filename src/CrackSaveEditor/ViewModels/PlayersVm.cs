@@ -7,12 +7,17 @@ namespace CrackSaveEditor.ViewModels;
 
 public sealed class PlayerVm : ObservableObject
 {
+    // Hotbar slots (added with the satchel game update): 2 by default, +1 per worn satchel, max 4.
+    public const int DefaultSlots = 2, MaxSlots = 4;
+
+    readonly JsonObject _world;
     readonly JsonObject? _bed;
     readonly JsonObject? _tips;
     static Session S => Session.Current;
 
     public PlayerVm(JsonObject world, JsonObject account)
     {
+        _world = world;
         SteamId = account.Long("steamId");
         Name = account.Str("displayName");
         _bed = world.Obj("bedRecord").Arr("entries").Objects().FirstOrDefault(e => e.Long("steamId") == SteamId);
@@ -50,6 +55,47 @@ public sealed class PlayerVm : ObservableObject
             Raise();
         }
     }
+
+    /// <summary>
+    /// Saves from before the satchel update have no hotbarSlots (version 0); the game then grants
+    /// every account the maximum. Offline players (SteamID 0) always get the default.
+    /// </summary>
+    public int HotbarSlots
+    {
+        get
+        {
+            if (SteamId == 0) return DefaultSlots;
+            if (_world["hotbarSlots"] is not JsonObject hb || hb.Int("version") == 0) return MaxSlots;
+            var entry = hb.Arr("players").Objects().FirstOrDefault(e => e.Long("steamId") == SteamId);
+            return entry?.Int("slots") ?? DefaultSlots;
+        }
+        set
+        {
+            int old = HotbarSlots;
+            value = Math.Clamp(value, DefaultSlots, MaxSlots);
+            if (SteamId == 0 || old == value) { Raise(); return; }
+
+            var hb = _world.Obj("hotbarSlots");
+            var players = hb.Arr("players");
+            if (hb.Int("version") == 0)
+            {
+                // Materialise the implicit "everyone has the max" so other players keep it.
+                players.Clear();
+                foreach (var acc in _world.Obj("finance").Arr("accounts").Objects())
+                    if (acc.Long("steamId") != 0)
+                        players.Add(new JsonObject { ["steamId"] = unchecked((ulong)acc.Long("steamId")), ["slots"] = MaxSlots });
+                hb["version"] = 1;
+            }
+            var entry = players.Objects().FirstOrDefault(e => e.Long("steamId") == SteamId);
+            if (entry == null)
+                players.Add(entry = new JsonObject { ["steamId"] = unchecked((ulong)SteamId) });
+            entry["slots"] = value;
+            S.Track(Loc.T("Players"), Loc.F("{0} hotbar slots", Name), old, value);
+            Raise();
+        }
+    }
+
+    public bool CanEditHotbar => SteamId != 0;
 
     public int TipsSeen => _tips?["seen"] is JsonArray a ? a.Count : 0;
     public string TipsText => _tips?["seen"] is JsonArray a && a.Count > 0

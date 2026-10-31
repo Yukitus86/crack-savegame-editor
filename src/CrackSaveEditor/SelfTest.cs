@@ -65,6 +65,8 @@ static class SelfTest
         int metaDayBefore = s.Slot.Meta.Int("day");
         Cheats.AddMoney(100_000);
         Cheats.MaxScanner();
+        var account = s.Slot.World.Obj("finance").Arr("accounts").Objects().First(a => a.Long("steamId") != 0);
+        new ViewModels.PlayerVm(s.Slot.World, account).HotbarSlots = 3;
         s.Save();
 
         var reloaded = SaveSlot.Load(0);
@@ -75,6 +77,10 @@ static class SelfTest
         Check($"meta balance synced ({reloaded.Meta.Int("balanceCents")})", reloaded.Meta.Int("balanceCents") == after);
         Check($"meta day kept ({reloaded.Meta.Int("day")})", reloaded.Meta.Int("day") == metaDayBefore);
         Check("run marked unranked", reloaded.Run == null || reloaded.Run.Bool("ranked") == false);
+        var hotbar = reloaded.World.Obj("hotbarSlots");
+        var hotbarEntry = hotbar.Arr("players").Objects().FirstOrDefault(e => e.Long("steamId") == account.Long("steamId"));
+        Check($"hotbar slots saved (version {hotbar.Int("version")}, slots {hotbarEntry.Int("slots")})",
+            hotbar.Int("version") == 1 && hotbarEntry.Int("slots") == 3);
         Check("backup created", BackupService.List().Count > 0);
 
         // File-level tools (slot copy etc.) must unrank too: copy the original ranked files into slot 2.
